@@ -53,7 +53,7 @@ public class Tokenizer {
             case ')':
                 return new Token(TokenType.LPAREN, ")");
             default:
-                throw new RuntimeException("Unexpected character: " + nextChar);
+                throw new RuntimeException("Unexpected character: \"" + nextChar + "\"");
         }
     }
 }
