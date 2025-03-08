@@ -10,11 +10,19 @@ public class App {
         String input = scanner.nextLine();
         scanner.close();
 
+
         Tokenizer tokenizer = new Tokenizer(input);
+        /* Scanner test
         Token token = tokenizer.nextToken();
         while (token.type != TokenType.EOF) {
             System.out.println(token);
             token = tokenizer.nextToken();
-        }
+        }        
+        */
+
+        Parser parser = new Parser(tokenizer);
+        NonterminalNode root = parser.parse();
+
+        System.out.println(root);
     }
 }
