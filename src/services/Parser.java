@@ -76,7 +76,7 @@ public class Parser {
             varNode.addChild(new TerminalNode(currentToken));
             updateCurrentToken();
         } else {
-            throw new RuntimeException("Token " + currentToken.lexeme + " is not a valid variable");
+            throw new RuntimeException("Token \"" + currentToken.lexeme + "\" is not a valid variable");
         }
 
         return varNode;
