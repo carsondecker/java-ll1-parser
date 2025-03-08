@@ -20,7 +20,7 @@ public class Parser {
 
     private NonterminalNode expr() {
         NonterminalNode exprNode = new NonterminalNode();
-        exprNode.setName("expr");
+        exprNode.setName("<expr>");
 
         exprNode.addChild(term());
 
@@ -35,7 +35,7 @@ public class Parser {
 
     private NonterminalNode term() {
         NonterminalNode termNode = new NonterminalNode();
-        termNode.setName("term");
+        termNode.setName("<term>");
 
         termNode.addChild(factor());
 
@@ -50,7 +50,7 @@ public class Parser {
 
     private NonterminalNode factor() {
         NonterminalNode factorNode = new NonterminalNode();
-        factorNode.setName("factor");
+        factorNode.setName("<factor>");
         
         if (currentToken.type == TokenType.LPAREN) {
             factorNode.addChild(new TerminalNode(currentToken));
@@ -70,7 +70,7 @@ public class Parser {
 
     private NonterminalNode var() {
         NonterminalNode varNode = new NonterminalNode();
-        varNode.setName("var");
+        varNode.setName("<var>");
 
         if (currentToken.type == TokenType.NUMBER || currentToken.type == TokenType.ID) {
             varNode.addChild(new TerminalNode(currentToken));

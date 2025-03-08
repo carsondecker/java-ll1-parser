@@ -51,7 +51,7 @@ public class Tokenizer {
             case '(':
                 return new Token(TokenType.LPAREN, "(");
             case ')':
-                return new Token(TokenType.LPAREN, ")");
+                return new Token(TokenType.RPAREN, ")");
             default:
                 throw new RuntimeException("Unexpected character: \"" + nextChar + "\"");
         }
