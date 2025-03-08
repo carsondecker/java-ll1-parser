@@ -13,7 +13,7 @@ This project creates and displays a parse tree for user input, which is derived 
 I am taking a programming languages class where we are exploring tokenizers and parsers, so I decided to write one from scratch in Java to further my understanding of how parsers work, practice using regex, and demonstrate my knowledge of Java.
 
 ## How do I run this project?
-- Download the JRE from [here](https://www.java.com/en/download/manual.jsp), choose the correct one based on your OS, click on it and follow the installation instructions.
+- Download the JRE from [here](https://www.java.com/en/download/), choose the correct one based on your OS, click on it and follow the installation instructions.
 - Open your command line and run `java -version` to make sure you have java installed. It should give you details on your installation.
 - Go to the releases tab on this github page and download the .jar file.
 - Open your command line and run `cd FILEPATH`. Go to your file explorer and locate the .jar file, then copy and paste the filepath next to cd, don't just paste in FILEPATH.
