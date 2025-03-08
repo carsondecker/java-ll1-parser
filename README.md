@@ -1,5 +1,5 @@
 # java-ll1-parser
-An LL(1) parser for simple expressions written in Java. It's a recursive descent parser, but it might not exactly fit the criteria of an LL(1) parser. The whole project was written from scratch except for this [tree printing library](https://github.com/davidsusu/tree-printer/tree/v3.2.1) used to format the output as a tree.
+An LL(1) parser for simple expressions written in Java. It's a recursive descent parser, but it might not exactly fit the exact criteria of an LL(1) parser. The whole project was written from scratch except for this [tree printing library](https://github.com/davidsusu/tree-printer/tree/v3.2.1) used to format the output as a tree.
 
 ## What does this project do?
 This project creates and displays a parse tree for user input, which is derived from the following grammar I wrote:
